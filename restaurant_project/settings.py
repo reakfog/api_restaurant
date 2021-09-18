@@ -19,6 +19,8 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
     # First party apps
     "restaurant_project.apps.core",
+    "restaurant_project.apps.restaurant",
+    "restaurant_project.apps.utils",
 ]
 
 MIDDLEWARE = [

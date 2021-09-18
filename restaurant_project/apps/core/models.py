@@ -3,10 +3,8 @@ from django.contrib.auth.models import AbstractBaseUser, PermissionsMixin
 from django.db.models import BooleanField, CharField, DateTimeField, EmailField
 from django.utils import timezone
 from django.utils.translation import gettext_lazy as _
-from restaurant_project.apps.core.utils.validators import phone_number_validator
 from phonenumbers import PhoneNumberFormat, format_number, geocoder, parse
-
-__all__ = ("User",)
+from restaurant_project.apps.core.utils.validators import phone_number_validator
 
 
 class UserManager(BaseUserManager):
