@@ -1,13 +1,13 @@
 from django.conf import settings
-from django.db.models import SET_NULL, CharField, ForeignKey, SlugField, URLField
+from django.db.models import CASCADE, CharField, ForeignKey, URLField
 from django.utils.translation import gettext_lazy as _
 from restaurant_project.apps.utils.models import TimestampedModel
 
 
 class Restaurant(TimestampedModel):
-    user = ForeignKey(settings.AUTH_USER_MODEL, on_delete=SET_NULL, related_name="restaurant", null=True)
+    user = ForeignKey(settings.AUTH_USER_MODEL, on_delete=CASCADE, related_name="restaurant")
 
-    name = SlugField(_("Name"), max_length=100)
+    name = CharField(_("Name"), max_length=100, unique=True)
     description = CharField(_("Description"), max_length=1000, blank=True, null=True, default=None)
     link = URLField(_("Link"), blank=True, null=True, default=None)
 
