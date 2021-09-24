@@ -19,17 +19,27 @@ is always a great plus.
 You need to install Python 3 on your local machine and meet the following conditions:
 1. Clone the repository to your local machine
 2. In the project root directory, install and run the virtual environment
-    - `python3 -m venv venv`
-    - `source venv/bin/activate`
+```
+ python3 -m venv venv
+ source venv/bin/activate
+```
 4. Install requirements:
-    - `pip install -r requirements.txt`
+```
+ pip install -r requirements.txt
+```
 5. Apply all Django migrations:
-    - `python3 manage.py makemigrations`
-    - `python3 manage.py migrate`
+```
+ python3 manage.py makemigrations
+ python3 manage.py migrate
+```
 6. In case you need access to the admin panel, create a superuser:
-    - `python3 manage.py createsuperuser`
+```
+ python3 manage.py createsuperuser
+```
 7. Launch local server:
-    - `python3 manage.py runserver`
+```
+ python3 manage.py runserver
+```
 
 > The app will be available at http://127.0.0.1:8000/
 
@@ -42,8 +52,8 @@ API documentation endpoints:
 3. YAML - `/swagger.yaml`
 
 User and JWT creation endpoints:
-1. User creation: POST - `/auth​/users​/`
-2. JWT creation: POST - `​/auth​/jwt​/create​/`
+1. User creation: POST - `/auth/users/`
+2. JWT creation: POST - `/auth/jwt/create/`
 
 > JWT must be given in the following format:  
 > Authorization: JWT `access_token`
