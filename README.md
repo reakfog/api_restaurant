@@ -38,11 +38,10 @@ You can view the API documentation using various formats. Choose the option that
 
 API documentation endpoints:
 1. Swagger - `/swagger/`
-2. Redoc - `/redoc/`
-3. JSON - `/swagger.json`
-4. YAML - `/swagger.yaml`
+2. JSON - `/swagger.json`
+3. YAML - `/swagger.yaml`
 
-Quick user and JWT creation:
+User and JWT creation endpoints:
 1. User creation: POST - `/auth​/users​/`
 2. JWT creation: POST - `​/auth​/jwt​/create​/`
 
