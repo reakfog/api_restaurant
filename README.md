@@ -1,4 +1,4 @@
-# Restaurnat API
+# Restaurant API
 
 ## Summary
 1. [Task](#task)
